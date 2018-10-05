@@ -1,0 +1,72 @@
+﻿@using Notification.Processor.Models
+@model NotificationModel
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <style type="text/css">
+
+        center {
+            width: 100%;
+            min-width: 580px;
+        }
+
+
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        td {
+            word-break: break-word;
+            -webkit-hyphens: none;
+            -moz-hyphens: none;
+            hyphens: none;
+            border-collapse: collapse !important;
+        }
+
+        td {
+            font-family: Calibri;
+            font-size: 12px !important;
+        }
+
+        tr {
+            line-height: 20px;
+        }
+      
+    </style>
+</head>
+
+
+<table cellpadding="2" cellspacing="0" style="max-width:600px;">
+    <tr>
+        <td style="width:100%;font-size:12px;">To @Model.FirstName,</td>
+    </tr>
+    <tr>
+        <td align="left" style="padding-bottom:20px">We wanted to say thanks for being one of the most valued clients. You have spent: $@Model.CurrentExpense so far. </td>
+    </tr>
+
+    <tr><td align="left">Today, we are welcoming you to VIP, our special programmes for those who have purchased more than $3000 this year:</td></tr>
+    <tr><td align="left" style="padding-left:20px">&#8226; $50 gift card x 5 </td></tr>
+    <tr><td align="left" style="padding-left:20px">&#8226; 10 movie ticket </td></tr>
+    <tr><td align="left" style="padding-left:20px">&#8226; 5 day family stay voucher </td></tr>
+    <tr><td align="left" style="padding-bottom:30px">For more information regarding this programme, please <a target="_blank" href="www.google.com" style="color: #abd8ff"> click here.</a></td></tr>
+
+    <tr>
+        <td colspan="3" style="line-height:15px;border:none;font-size:12px;">
+            <span>
+                Kind regards
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" style="line-height:15px;border:none;font-size:12px;">
+            <span>
+                Customer Support Team
+            </span>
+        </td>
+    </tr>
+</table>
